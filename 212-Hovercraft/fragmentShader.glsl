@@ -1,4 +1,4 @@
-#version 440
+#version 460
 
 struct Material
 {
@@ -9,6 +9,7 @@ struct Material
 	sampler2D specularTex;
 };
 
+//Stuff coming in from vertex shader
 in vec3 vecposition;
 in vec3 veccolor;
 in vec2 vectexcoord;
@@ -21,7 +22,7 @@ uniform Material material;
 uniform vec3 lightPos0;
 uniform vec3 cameraPos;
 
-//Functions
+//Calculation Functions
 vec3 calculateAmbient(Material material)
 {
 	return material.ambient;
@@ -30,7 +31,10 @@ vec3 calculateAmbient(Material material)
 vec3 calculateDiffuse(Material material, vec3 vecposition, vec3 vecnormal, vec3 lightPos0)
 {
 	vec3 posToLightDirVec =normalize(lightPos0-vecposition);
+
+	//Clamp it between 0 and 1 so the min value and the max value
 	float diffuse = clamp(dot(posToLightDirVec, vecnormal), 0, 1);
+
 	vec3 finalDiffuse = material.diffuse * diffuse;
 
 	return finalDiffuse;
@@ -39,9 +43,13 @@ vec3 calculateDiffuse(Material material, vec3 vecposition, vec3 vecnormal, vec3 
 vec3 calculateSpecular(Material material, vec3 vecposition, vec3 vecnormal, vec3 lightPos0, vec3 cameraPos)
 {
 	vec3 lightToPosDirVec= normalize(vecposition-lightPos0);
+
 	vec3 reflectDirVec = normalize(reflect(lightToPosDirVec,normalize(vecnormal)));
+
 	vec3 posToViewDirVec = normalize(cameraPos-vecposition);
+
 	float specularConstant = pow(max(dot(posToViewDirVec, reflectDirVec),0),30);
+
 	vec3 finalSpecular= material.specular* specularConstant *texture(material.specularTex, vectexcoord).rgb;
 
 	return finalSpecular;

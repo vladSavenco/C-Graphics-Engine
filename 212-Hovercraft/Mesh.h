@@ -6,7 +6,6 @@
 #include <gtc\matrix_transform.hpp>
 
 #include "Texture.h"
-#include "BasicShapes.h"
 #include "Material.h"
 #include "Vertex.h"
 #include "Shader.h"
@@ -38,7 +37,6 @@ private:
 	void updateModelMatrix();
 
 public:
-	Mesh(BasicShapes* primitive, glm::vec3 position, glm::vec3 originPos, glm::vec3 rotation, glm::vec3 scale);
 
 	Mesh(Vertex* vertexArray, const unsigned& nrOfVertices, GLuint* indexArray, const unsigned& nrOfIndicies, glm::vec3 position, glm::vec3 originPos, glm::vec3 rotation, glm::vec3 scale);
 

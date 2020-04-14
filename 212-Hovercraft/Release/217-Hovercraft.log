@@ -16,15 +16,9 @@ E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(211,141): warning 
 E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(213,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
 E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(227,153): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
 E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(241,150): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-  main.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Material.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Mesh.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Model.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Model.cpp(17,38): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-  Shader.cpp
-  Generating Code...
-  217-Hovercraft.vcxproj -> E:\Github\212-Hovercraft-Engine\212-Hovercraft\Debug\212-Hovercraft.exe
+  Generating code
+  3 of 784 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  217-Hovercraft.vcxproj -> E:\Github\212-Hovercraft-Engine\212-Hovercraft\Release\212-Hovercraft.exe

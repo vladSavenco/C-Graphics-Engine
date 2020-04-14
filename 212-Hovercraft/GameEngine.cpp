@@ -47,7 +47,7 @@ void GameEngine::InitiateEngine()
     this->ProjectionMatrix = glm::perspective(glm::radians(this->fov), static_cast<float>(this->frameBufferWidth) / this->frameBufferHeight, this->nearPlane, this->farPlane);
 
     //Initiate Shader
-    this->shaders.push_back(new Shader(this->GL_Version_Major, this->GL_Version_Minor, "vertex_core.glsl", "fragment_core.glsl"));
+    this->shaders.push_back(new Shader(this->GL_Version_Major, this->GL_Version_Minor, "vertexShader.glsl", "fragmentShader.glsl"));
 }
 
 //Initialise Textures
@@ -236,7 +236,9 @@ void GameEngine::initModels()
     //Creating the Plane
     std::vector<Mesh*>Plane;
 
-    Plane.push_back(new Mesh(&Quad(), glm::vec3(0.f, 0.f, 0.f), glm::vec3(0.f), glm::vec3(0.f, 0.f, 0.f), glm::vec3(1.f)));
+    std::vector<Vertex>plane = objectLoader("ObjModels/plane.obj");
+
+    Plane.push_back(new Mesh(plane.data(), plane.size(), NULL, 0, glm::vec3(0.f, 0.f, 0.f), glm::vec3(0.f), glm::vec3(0.f, 0.f, 0.f), glm::vec3(1.f)));
 
     this->models.push_back(new Model(glm::vec3(0.f, 0.f, 0.f), this->materials[0], this->textures[TEX_SPLASH], this->textures[TEX_SPLASH_SPECULAR], Plane));
 

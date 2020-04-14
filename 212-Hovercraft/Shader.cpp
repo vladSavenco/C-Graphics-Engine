@@ -1,5 +1,6 @@
 #include "Shader.h"
 
+//Function that returns the source code of a shader read from file
 std::string Shader::loadShaderSource(char* filename)
 {
     std::string temp = "";
@@ -28,6 +29,8 @@ std::string Shader::loadShaderSource(char* filename)
     return src;
 }
 
+
+//Function that creates a shader and returns it
 GLuint Shader::loadShader(GLenum type, char* filename)
 {
     char infoLog[512];
@@ -50,6 +53,8 @@ GLuint Shader::loadShader(GLenum type, char* filename)
     return shader;
 }
 
+
+//Function to link the program and shaders
 void Shader::linkProgram(GLuint vertexShader, GLuint geometryShader, GLuint fragmentShader)
 {
     char infoLog[512];
@@ -81,6 +86,8 @@ void Shader::linkProgram(GLuint vertexShader, GLuint geometryShader, GLuint frag
     glUseProgram(0);
 }
 
+
+//Shader constructor
 Shader::Shader(const int versionMajor, const int versionMinor, const char* vertexFile, const char* fragmentFile, const char* geometryFile)
     :versionMajor(versionMajor), versionMinor(versionMinor)
 {

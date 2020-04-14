@@ -36,9 +36,6 @@
     <ClCompile Include="Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BasicShapes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -68,15 +65,12 @@
     <ClInclude Include="libraries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BasicShapes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="fragment_core.glsl">
+    <None Include="fragmentShader.glsl">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="vertex_core.glsl">
+    <None Include="vertexShader.glsl">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

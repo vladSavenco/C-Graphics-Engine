@@ -53,33 +53,6 @@ void Mesh::updateModelMatrix()
     this->ModelMatrix = glm::scale(this->ModelMatrix, this->scale);
 }
 
-//Create the mesh using the basic shapes
-Mesh::Mesh(BasicShapes* basicShape, glm::vec3 position=glm::vec3(0.f), glm::vec3 originPos = glm::vec3(0.f), glm::vec3 rotation = glm::vec3(0.f), glm::vec3 scale = glm::vec3(1.f))
-{
-    this->position = position;
-    this->originPos = originPos;
-    this->rotation = rotation;
-    this->scale = scale;
-    
-    this->nrOfVertices = basicShape->getNrOfVertices();
-    this->nrOfIndices = basicShape->getNrOfIndices();
-
-    this->vertexArray = new Vertex[this->nrOfVertices];
-    for (size_t i = 0; i <this->nrOfVertices; i++)
-    {
-        this->vertexArray[i] = basicShape->getVertices()[i];
-    }
-
-    this->indexArray = new GLuint[this->nrOfIndices];
-    for (size_t i = 0; i < this->nrOfIndices; i++)
-    {
-        this->indexArray[i] = basicShape->getIndices()[i];
-    }
-
-    this->initVAO();
-    this->updateModelMatrix();
-}
-
 //Create the mesh from a vertes array
 Mesh::Mesh(Vertex* vertexArray,const unsigned& nrOfVertices, GLuint* indexArray, const unsigned& nrOfIndices,glm::vec3 position = glm::vec3(0.f), glm::vec3 originPos=glm::vec3(0.f), glm::vec3 rotation = glm::vec3(0.f),glm::vec3 scale = glm::vec3(1.f))
 {

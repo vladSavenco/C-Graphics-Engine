@@ -6,5 +6,4 @@
 #include <SOIL2.h>
 
 #include "Mesh.h"
-#include "BasicShapes.h"
 #include "Model.h"
