@@ -6,7 +6,7 @@ int main()
     std::cout << "Use arrow keys to move the camera and the v and c key to go up and down" << std::endl;
     std::cout << "Press m to change between static camera and moving camera" << std::endl;
 
-    GameEngine gameEngine("HoverCraft", 1920, 1080, 4, 6, false);
+    GameEngine gameEngine("HoverCraft", 1920, 1080, 4, 6, true);
 
     //Main loop
     while(!gameEngine.GetWindowShouldClose())

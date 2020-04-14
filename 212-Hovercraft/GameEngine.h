@@ -32,7 +32,7 @@ enum material_enum
 //Mesh name enumerator
 enum mesh_enum
 {
-	MESH_QUAD = 0
+	
 };
 
 class GameEngine

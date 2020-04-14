@@ -53,7 +53,7 @@ void Mesh::updateModelMatrix()
     this->ModelMatrix = glm::scale(this->ModelMatrix, this->scale);
 }
 
-//Create the mesh using the primitive forms
+//Create the mesh using the basic shapes
 Mesh::Mesh(BasicShapes* basicShape, glm::vec3 position=glm::vec3(0.f), glm::vec3 originPos = glm::vec3(0.f), glm::vec3 rotation = glm::vec3(0.f), glm::vec3 scale = glm::vec3(1.f))
 {
     this->position = position;

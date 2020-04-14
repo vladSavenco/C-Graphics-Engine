@@ -1,37 +1,21 @@
 ﻿  GameEngine.cpp
 E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(117,152): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(130,161): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(132,162): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(147,146): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(161,160): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(175,152): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(189,146): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(115,152): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(128,161): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(130,162): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(145,146): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(159,160): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(173,152): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(187,146): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(201,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
 E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(203,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
 E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(205,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(207,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(209,141): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(211,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(213,141): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(215,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(229,153): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(241,122): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-  main.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Material.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Mesh.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Model.cpp
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Material.h(14,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\Github\212-Hovercraft-Engine\212-Hovercraft\Model.cpp(17,38): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
-  BasicShapes.cpp
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(207,141): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(209,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(211,141): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(213,142): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(227,153): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
+E:\Github\212-Hovercraft-Engine\212-Hovercraft\GameEngine.cpp(239,122): warning C4316: 'Mesh': object allocated on the heap may not be aligned 16
   Shader.cpp
-  Texture.cpp
   Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-soil2-debug.lib(image_DXT.obj) : warning LNK4099: PDB 'soil2-debug.pdb' was not found with 'soil2-debug.lib(image_DXT.obj)' or at 'E:\Github\212-Hovercraft-Engine\212-Hovercraft\Debug\soil2-debug.pdb'; linking object as if no debug info
-soil2-debug.lib(image_helper.obj) : warning LNK4099: PDB 'soil2-debug.pdb' was not found with 'soil2-debug.lib(image_helper.obj)' or at 'E:\Github\212-Hovercraft-Engine\212-Hovercraft\Debug\soil2-debug.pdb'; linking object as if no debug info
-soil2-debug.lib(SOIL2.obj) : warning LNK4099: PDB 'soil2-debug.pdb' was not found with 'soil2-debug.lib(SOIL2.obj)' or at 'E:\Github\212-Hovercraft-Engine\212-Hovercraft\Debug\soil2-debug.pdb'; linking object as if no debug info
-soil2-debug.lib(wfETC.obj) : warning LNK4099: PDB 'soil2-debug.pdb' was not found with 'soil2-debug.lib(wfETC.obj)' or at 'E:\Github\212-Hovercraft-Engine\212-Hovercraft\Debug\soil2-debug.pdb'; linking object as if no debug info
   217-Hovercraft.vcxproj -> E:\Github\212-Hovercraft-Engine\212-Hovercraft\Debug\212-Hovercraft.exe

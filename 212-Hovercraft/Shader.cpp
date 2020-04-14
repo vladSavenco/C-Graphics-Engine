@@ -17,7 +17,7 @@ std::string Shader::loadShaderSource(char* filename)
     }
     else
     {
-        std::cout << "ERROR::SHADER::COULD_NOT_OPEN_FILE: "<<filename << "\n";
+        std::cout << "COULD_NOT_OPEN_FILE"<<filename << "\n";
     }
 
     in_file.close();
@@ -43,7 +43,7 @@ GLuint Shader::loadShader(GLenum type, char* filename)
     if (!success)
     {
         glGetShaderInfoLog(shader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::COULD_NOT_COMPILE_SHADER: "<<filename << "\n";
+        std::cout << "COULD_NOT_COMPILE_SHADER"<<filename << "\n";
         std::cout << infoLog << "\n";
     }
 
@@ -90,10 +90,10 @@ Shader::Shader(const int versionMajor, const int versionMinor, const char* verte
 
         vertexShader = loadShader(GL_VERTEX_SHADER,(char*) vertexFile);
 
-        if (geometryFile != "")
+      /*  if (geometryFile != "")
         {
             geometryShader = loadShader(GL_GEOMETRY_SHADER, (char*) geometryFile);
-        }
+        }*/
 
         fragmentShader = loadShader(GL_FRAGMENT_SHADER, (char*) fragmentFile);
 

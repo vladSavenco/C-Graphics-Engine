@@ -1,4 +1,4 @@
-#version 440
+#version 460
 
 struct Material
 {
@@ -21,7 +21,7 @@ uniform Material material;
 uniform vec3 lightPos0;
 uniform vec3 cameraPos;
 
-//Functions
+//Calculation Functions
 vec3 calculateAmbient(Material material)
 {
 	return material.ambient;

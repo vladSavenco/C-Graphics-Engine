@@ -3,7 +3,7 @@
 //Initialise the window
 void GameEngine::initGLFWWindow(const char* title, bool resizable)
 {
-    //Init GLFW
+    //Initialising GLFW
     glfwInit();
 
     //Creating the window 
@@ -16,8 +16,6 @@ void GameEngine::initGLFWWindow(const char* title, bool resizable)
 
     glfwGetFramebufferSize(this->window, &this->frameBufferWidth, &this->frameBufferHeight);
     glfwSetFramebufferSizeCallback(this->window, GameEngine::frameBuffer_resize_callback);
-
-    //glViewport(0, 0, frameBufferWidth, frameBufferHeight);
 
     //Important, needs to happen before loading GLEW.
     glfwMakeContextCurrent(this->window);
@@ -379,21 +377,16 @@ void GameEngine::update()
     //Moving the player
     this->UpdatePlayerInput();
 
+    //Animate models
+    this->modelAnimations();
+
     //Other input functions
     this->CloseWindow();
-
-    //Animate models
-    modelAnimations();
-
 }
 
 void GameEngine::render()
 {
-    //Update--
-    //updateInput(window);
-
-    //Draw--
-    //Clear
+    //Background colour
     glClearColor(0.f, 0.f, 1.f, 1.f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
@@ -410,6 +403,7 @@ void GameEngine::render()
     glfwSwapBuffers(window);
     glFlush();
 
+    //Unbinding everything
     glBindVertexArray(0);
     glUseProgram(0);
     glActiveTexture(0);
